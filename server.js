@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
 
 
-// restful routes===========================================================
+// basic routes===========================================================
 app.get("/", function (req, res) {
     res.redirect("home")
 })
@@ -24,10 +24,13 @@ app.get("/home", function (req, res) {
     res.render("home")
 })
 
+
+//login routes==========================
 app.get("/login", function (req, res) {
     res.render("login")
 })
 
+// sign up routes ======================
 app.get("/signup", function (req, res) {
     res.render("signup")
 })
