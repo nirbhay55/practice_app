@@ -1,9 +1,7 @@
 var express = require("express"),
     mongoose = require("mongoose"),
     bodyparser = require("body-parser"),
-    //methodOverride = require("method-override"),
-    // passport = require("passport"),
-    // LocalStrategy = require("passport-local"),
+    
     app = express();
 
 
@@ -15,7 +13,7 @@ app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
 
 
-// basic routes===========================================================
+// basic routes==========================
 app.get("/", function (req, res) {
     res.redirect("home")
 })
