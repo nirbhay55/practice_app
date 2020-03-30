@@ -1,7 +1,10 @@
-<%- include ("partials/header")%>
+<%- include ("partials/header") %>
+<!-- content ahead -->
+    <form class="ui form " action="/login" method="post">
+       <div class="field" ><label style="font-size: 30px;">Username</label> <input type="text" name="username" placeholder="username" required></div><br>
+       <div class="field"><label style="font-size: 30px;">Password</label> <input type="password" name="password" placeholder="password" required></div>
+       <div style="width: 150px;text-align: center;margin:0 auto;"><button  class="ui inverted  black button "  type="submit" value="LOGIN"><i class="user icon"></i>LOGIN</button></div>
+    </form>
 
-<h2>LOGIN</h2>
 
-
-
-<%- include ("partials/footer")%>
+<%- include ("partials/footer") %>
